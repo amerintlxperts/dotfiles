@@ -41,9 +41,9 @@
     {
       "apiBase": "http://www.bankexample.com:11434",
       "completionOptions": {},
-      "model": "llama3:8b",
+      "model": "codestral",
       "provider": "ollama",
-      "title": "llama3"
+      "title": "default"
     }
   ],
   "slashCommands": [
@@ -65,9 +65,9 @@
     }
   ],
   "tabAutocompleteModel": {
-    "model": "deepseek-coder:6.7b-base",
+    "model": "codestral",
     "provider": "ollama",
-    "title": "Deepseek"
+    "title": "codestral"
   },
   "tabAutocompleteOptions": {
     "maxPromptTokens": 2048,
