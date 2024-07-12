@@ -67,14 +67,17 @@
   "tabAutocompleteModel": {
     "model": "codestral",
     "provider": "ollama",
-    "title": "codestral"
+    "title": "codestral",
+    "apiBase": "http://www.bankexample.com:11434"
   },
   "tabAutocompleteOptions": {
     "maxPromptTokens": 2048,
-    "useCopyBuffer": true
+    "useCopyBuffer": true,
+    "multilineCompletions": "always"
   },
-  "embeddingsProvider": {                                                                                                                                                                                    
-    "provider": "ollama",                                                                                                                                                                                    
-    "model": "nomic-embed-text"                                                                                                                                                                              
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "apiBase": "http://www.bankexample.com:11434"
   }
 }
