@@ -40,10 +40,15 @@
   "models": [
     {
       "apiBase": "http://www.bankexample.com:11434",
-      "completionOptions": {},
       "model": "codestral",
       "provider": "ollama",
-      "title": "default"
+      "title": "codestral"
+    },
+    {
+      "apiBase": "http://www.bankexample.com:11434",
+      "model": "deepseek-coder-v2:16b-lite-base-q6_K",
+      "provider": "ollama",
+      "title": "deepseek"
     }
   ],
   "slashCommands": [
@@ -67,7 +72,7 @@
   "tabAutocompleteModel": {
     "model": "codestral",
     "provider": "ollama",
-    "title": "codestral",
+    "title": "tab Autocomplete",
     "apiBase": "http://www.bankexample.com:11434"
   },
   "tabAutocompleteOptions": {
@@ -76,6 +81,7 @@
     "multilineCompletions": "always"
   },
   "embeddingsProvider": {
+    "title": "embeddings provider",
     "provider": "ollama",
     "model": "nomic-embed-text",
     "apiBase": "http://www.bankexample.com:11434"
