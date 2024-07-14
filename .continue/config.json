@@ -43,12 +43,6 @@
       "model": "codestral",
       "provider": "ollama",
       "title": "codestral"
-    },
-    {
-      "apiBase": "http://www.bankexample.com:11434",
-      "model": "deepseek-coder-v2:16b-lite-base-q6_K",
-      "provider": "ollama",
-      "title": "deepseek"
     }
   ],
   "slashCommands": [
