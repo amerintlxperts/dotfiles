@@ -140,22 +140,6 @@
           "type": "aws"
         },
         {
-          "type": "kubectl",
-          "style": "powerline",
-          "powerline_symbol": "<background,parentBackground>\ue0b2",
-          "foreground": "#ffffff",
-          "background_templates": [
-            "{{if contains \"default\" .Profile}}#FFA400{{end}}",
-            "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
-          ],
-          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} \ue7ad ",
-          "properties": {
-            "context_aliases": {
-              "arn:aws:eks:eu-west-1:1234567890:cluster/posh": "posh"
-            }
-          }
-        },
-        {
           "background": "#622188",
           "foreground": "#d3d7cf",
           "invert_powerline": true,
@@ -170,21 +154,20 @@
           "type": "python"
         },
         {
-          "background": "#0D71CE",
-          "foreground": "#d3d7cf",
+          "type": "kubectl",
           "leading_diamond": "<background,parentBackground>\ue0b2",
           "style": "diamond",
-          "template": "<foreground,background> \uebd8 {{ .Name }}<foreground,background>",
-          "type": "az"
+          "background": "#0D71CE",
+          "foreground": "#d3d7cf",
+          "template": "<foreground,background>{{if .Namespace}}ﴱ {{.Namespace}}{{end}} <foreground,background>"
         },
         {
           "background": "#0D71CE",
           "foreground": "#d3d7cf",
           "leading_diamond": "<background,parentBackground>\ue0b2",
           "style": "diamond",
-          "template": "<foreground,background> {{ if .SSHSession }}<#FFD209,background>\u26a1{{ end }}<foreground,background>{{ .HostName }} <foreground,background>",
-          "trailing_diamond": "<#0D71CE,transparent>\ue0b0<#d3d7cf,transparent>",
-          "type": "session"
+          "template": "<foreground,background> \uebd8 {{ .Name }}<foreground,background>",
+          "type": "az"
         },
         {
           "background": "transparent",
