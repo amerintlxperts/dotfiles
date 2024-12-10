@@ -64,9 +64,9 @@
     }
   ],
   "tabAutocompleteModel": {
-    "model": "",
+    "model": "qwen2.5-coder:7b",
     "provider": "ollama",
-    "title": "tab Autocomplete",
+    "title": "<Tab> Autocomplete",
     "apiBase": "https://ollama.robinmordasiewicz.amerintlxperts.com"
   },
   "tabAutocompleteOptions": {
